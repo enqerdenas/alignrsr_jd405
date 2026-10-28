@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enqerdenas-alignrsr_jd405"
+version = "0.1.0"
+description = "把输入按语义边界切成独立单元，逐单元核对对齐算法研究员·智能体的任务终止条件相关的特征并标出命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "enqerdenas" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://enqerdenas.github.io"
+Repository = "https://github.com/enqerdenas/alignrsr_jd405"
+Issues = "https://github.com/enqerdenas/alignrsr_jd405/issues"
+
+[project.scripts]
+alignrsr_jd405 = "alignrsr_jd405:main"
+
+[tool.setuptools]
+py-modules = ["alignrsr_jd405"]
